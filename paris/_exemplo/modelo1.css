@@ -1,0 +1,39 @@
+body {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	margin: 0px auto;
+	width: 900px;
+}
+header {
+	background-color: #990000;
+	font-size: 30px;
+	font-weight: bolder;
+	color: #FFFFFF;
+	text-align: right;
+	padding: 30px 5px 0px;
+	background-image: url(topo_modelo1.jpg);
+}
+main h1 {
+	color: #5A0100;
+}
+main h2 {
+	font-size: 18px;
+	color: #990000;
+}
+section {
+	margin-left: 50px;
+}
+footer {
+	background-color: #5A0100;
+	font-weight: bolder;
+	color: #FFFFFF;
+	text-align: right;
+	padding: 10px 7px 10px 0px;
+}
+#principal {
+	color: #FFFFFF;
+	background-color: #5A0100;
+}
+.destaque {
+	background-color: #CCCCCC;
+	font-style: italic;
+}

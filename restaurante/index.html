@@ -1,0 +1,76 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Restaurante</title>
+<link href="jquery-mobile/jquery.mobile.structure-1.3.0.min.css" rel="stylesheet" type="text/css">
+<link href="jquery-mobile/jQueryFW.css" rel="stylesheet" type="text/css">
+<script src="jquery-mobile/jquery-1.11.1.min.js" type="text/javascript"></script>
+<script src="jquery-mobile/jquery.mobile-1.3.0.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+<div id="inicial" data-role="page" data-theme="e">
+  <div data-role="header" data-theme="e">
+    <h1>Restaurante</h1>
+  </div>
+  <div data-role="content">
+    <ul data-role="listview" data-theme="d">
+      <li><a href="#prato-do-dia">Prato do dia</a></li>
+      <li><a href="#reserva">Reserva</a></li>
+      <li><a href="#localizacao">Localização</a></li>
+    </ul>
+  Conteúdo</div>
+  <div data-role="footer" data-theme="e">
+    <h4>11 1234-5678  </h4>
+  </div>
+</div>
+<div id="prato-do-dia" data-role="page" data-theme="e">
+  <div data-role="header" data-theme="e">
+    <a href="#inicial" data-role="button" data-icon="back" data-iconpos="notext">voltar</a>
+    <h1>Prato do dia</h1>
+  </div>
+  <div data-role="content" data-theme="e">
+  <h2>Prato principal:</h2>
+		<p>Carne a Vinha d´Álhos</p>
+		<p><img src="fotos/carne-vinha-d-alhos.jpg" width="290" height="161" alt="carne a vinha d álhos"></p>
+		<h2>Sobremesa: </h2>
+		<p>Doces portugueses diversos</p>
+		<p><img src="fotos/sobremesas.jpg" width="290" height="245" alt="sobremesas"></p>
+  </div>
+  <div data-role="footer" data-theme="e">
+    <h4>11 1234-5678 </h4>
+  </div>
+</div>
+<div id="reserva" data-role="page" data-theme="e">
+  <div data-role="header" data-theme="e">
+    <a href="#inicial" data-role="button" data-icon="back" data-iconpos="notext">voltar</a><h1>Reserva</h1>
+  </div>
+  <div data-role="content" data-theme="e">
+  <p><img src="fotos/restaurante.jpg" width="300" height="200" alt="restaurante"></p>
+  <p>Entre em contato com:</p>
+		<p>Mariana</p>
+		<p>11 1234-5678</p>
+		<p>Flávio</p>
+		<p>11 9876-5432</p>
+  </div>
+  <div data-role="footer" data-theme="e">
+    <h4>11 1234-5678 </h4>
+  </div>
+</div>
+<div id="localizacao" data-role="page" data-theme="e">
+  <div data-role="header" data-theme="e">
+    <a href="#inicial" data-role="button" data-icon="back" data-iconpos="notext">voltar</a><h1>Localização</h1>
+  </div>
+  <div data-role="content" data-theme="e">
+  <p>Rua Simpática, 123 - Alto da Lapa</p>
+		<p>São Paulo, SP</p>
+		<p>00000-000</p>
+		<iframe width="300" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=pt-BR&amp;geocode=&amp;q=mirante+da+lapa,+s%C3%A3o+paulo,+sp&amp;aq=&amp;sll=37.0625,-95.677068&amp;sspn=34.587666,86.572266&amp;ie=UTF8&amp;hq=mirante+da&amp;hnear=Lapa,+S%C3%A3o+Paulo,+Brasil&amp;t=m&amp;fll=-23.538888,-46.702774&amp;fspn=0.009777,0.021136&amp;st=109146043351405611748&amp;rq=1&amp;ev=zi&amp;split=1&amp;ll=-23.537983,-46.709404&amp;spn=0.013771,0.012875&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe><br /><small><a href="http://maps.google.com/maps?f=q&amp;source=embed&amp;hl=pt-BR&amp;geocode=&amp;q=mirante+da+lapa,+s%C3%A3o+paulo,+sp&amp;aq=&amp;sll=37.0625,-95.677068&amp;sspn=34.587666,86.572266&amp;ie=UTF8&amp;hq=mirante+da&amp;hnear=Lapa,+S%C3%A3o+Paulo,+Brasil&amp;t=m&amp;fll=-23.538888,-46.702774&amp;fspn=0.009777,0.021136&amp;st=109146043351405611748&amp;rq=1&amp;ev=zi&amp;split=1&amp;ll=-23.537983,-46.709404&amp;spn=0.013771,0.012875&amp;z=15&amp;iwloc=A" style="color:#0000FF;text-align:left">Exibir mapa ampliado</a></small>
+  </div>
+  <div data-role="footer" data-theme="e">
+    <h4>11 1234-5678 </h4>
+  </div>
+</div>
+</body>
+</html>

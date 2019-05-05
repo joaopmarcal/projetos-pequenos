@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>formulario_simples</title>
+<style type="text/css">
+label {
+	width: 80px;
+	display: block;
+	float: left;
+	color: #375D81;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	font-size: 16px;
+}
+input {
+	width: 400px;
+	padding-top: 3px;
+	padding-right: 3px;
+	padding-bottom: 3px;
+	padding-left: 3px;
+	color: #fff;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	font-weight: bolder;
+	font-size: 18px;
+	background-color: #375D81;
+}
+#botaoEnviar {
+	width: 150px;
+	border-radius: 30px;
+	margin-left: 80px;
+	cursor: pointer;
+}
+fieldset legend {
+	padding-top: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	color: #fff;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	font-weight: bolder;
+	background-color: #375D81;
+}
+fieldset {
+	width: 520px;
+	padding-top: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	border: thin solid #375D81;
+}
+</style>
+</head>
+
+<body>
+<form id="form1" name="form1" method="post">
+  <fieldset>
+    <legend>dados pessoais</legend>
+    <p>
+      <label for="nome">Nome:</label>
+      <input type="text" name="nome" id="nome">
+    </p>
+    <p>
+      <label for="email">E-mail:</label>
+      <input type="email" name="email" id="email">
+    </p>
+    <p>
+      <input name="botaoEnviar" type="submit" id="botaoEnviar" formaction="obrigado.html" formmethod="POST" value="Enviar Formulário">
+    </p>
+  </fieldset>
+</form>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</body>
+</html>

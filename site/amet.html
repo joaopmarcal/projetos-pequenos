@@ -1,0 +1,202 @@
+﻿<!doctype html>
+<html><!-- InstanceBegin template="/Templates/base.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta charset="UTF-8">
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Amet</title>
+<!-- InstanceEndEditable -->
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background-color: #42413C;
+	margin: 0;
+	padding: 0;
+	color: #000;
+}
+/* ~~ Seletores de elementos/tag ~~ */
+ul, ol, dl { /* Devido a variações entre navegadores, é recomendado zerar o padding e as margem nas listas. É possível especificar as quantidades aqui ou nos itens da lista (LI, DT, DD) que eles contêm. Lembre-se: o que você fizer aqui ficará em cascata para a lista de navegação a não ser que você escreva outro seletor mais específico. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* ao remover a margem superior, as margens podem escapar das suas containing block. A margem inferior restante vai mantê-la afastada de qualquer elemento que se segue. */
+	padding-right: 15px;
+	padding-left: 15px; /* ao adicionar o padding aos lados dos elementos dentro dos blocos, ao invés dos próprios elementos dos blocos, qualquer combinação de modelo de caixa será removida. Um bloco aninhado com padding lateral também pode ser usado como método alternativo. */
+}
+a img { /* esse seletor remove a borda azul padrão exibida em alguns navegadores ao redor de uma imagem circundada por um link. */
+	border: none;
+}
+/* ~~ A estilização dos links do seu site deve permanecer nesta ordem – incluindo o grupo de seletores que criam o efeito hover. ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* a não ser que você crie o estilo de seus links para que pareçam totalmente exclusivos, é melhor utilizar links sublinhados para uma identificação visual mais rápida. */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* esse grupo de seletores dará ao navegador que estiver usando um teclado, a mesma sensação de focalizar como se estivesse usando um mouse. */
+	text-decoration: none;
+}
+/* ~~ Esse contêiner de largura fixa envolve todos os outros blocos~~ */
+.container {
+	width: 960px;
+	background-color: #FFFFFF;
+	margin: 0 auto; /* o valor automático nos lados, combinado com a largura, centraliza o layout */
+}
+/* ~~ O cabeçalho não tem uma largura predeterminada. Ele se estenderá por toda a largura do seu layout. ~~ */
+header {
+	background-color: #ADB96E;
+}
+/* ~~ Essas são as colunas do layout. ~~ 
+
+1) O padding é colocado somente na parte superior e/ou inferior dos elementos de blocos. Os elementos nesses blocos têm padding em seus lados impedindo o surgimento do “modelo tipo caixa”. Lembre-se: ao adicionar qualquer padding lateral ou borda ao próprio bloco, ele será adicionado à largura que você define para criar a largura *total*. Também é possível remover o padding no elemento dentro do bloco e estabelecer um segundo elemento de bloco dentro do primeiro, sem largura, e com o padding necessário para o seu design.
+
+2) Como as colunas são todas flutuantes, não foi atribuída nenhuma margem a elas. Se for necessário adicionar margem, evite colocá-la no lado flutuante (por exemplo, uma margem direita em um bloco definido para flutuar à direita). Em vez disso, muitas vezes é utilizado o padding . Para os blocos em que essa regra tem que ser quebrada, é necessário adicionar a declaração "exibição: inline" à regra do elemento de bloco para solucionar um erro recorrente em algumas versões do Internet Explorer em que a imagem é duplicada.
+
+3) Como as classes podem ser usadas diversas vezes em um documento (e um elemento também pode ter várias classes aplicadas), foram atribuídas às colunas nomes de classe ao invés de IDs. Por exemplo, se for necessário, os blocos com duas barras laterais podem ser empilhados. Se preferir, é possível alterar facilmente para os IDs desde que esteja usando-os somente uma vez em cada documento.
+
+4) Caso prefira seu navegador à esquerda ao invés de à direita, simplesmente flutue essas colunas para a direção oposta, todas à esquerda ao invés de à direita, e elas serão apresentadas na ordem inversa. Não há necessidade de mover os blocos em torno da fonte HTML.
+
+*/
+.sidebar1 {
+	float: left;
+	width: 180px;
+}
+.content {
+	padding: 10px 0;
+	width: 600px;
+	float: left;
+}
+aside {
+	float: left;
+	width: 180px;
+	background-color: #EADCAE;
+	padding: 10px 0 80px;
+	background-image: url(back-areia.jpg);
+	background-position: center bottom;
+	background-repeat: repeat-x;
+}
+
+/* ~~ Esse seletor agrupado fornece as listas dentro do espaço da área de conteúdo ~~ */
+.content ul, .content ol {
+	padding: 0 15px 15px 40px; /* esse padding espelha o padding direito nos cabeçalhos e na regra de parágrafo acima. O padding foi colocado na parte inferior para obter espaço entre outros elementos das listas e à esquerda para criar o recuo. Estes podem ser ajustados como desejar. */
+}
+
+/* ~~ Os estilos de lista de navegação (podem ser removidos se for escolhido o uso de um submenu criado anteriormente, como o Spry) ~~ */
+ul.nav {
+	list-style: none; /* isso remove o marcador de lista */
+	border-top: 1px solid #666; /* isso cria a borda da parte superior para os links – todos os outros são colocados usando uma borda na parte inferior no LI */
+	/* [disabled]margin-bottom: 15px; */ /* isso cria o espaço entre a navegação no conteúdo abaixo */
+	margin-left: 0px;
+	line-height: 0px;
+}
+ul.nav li {
+	border-bottom: 1px solid #666;
+}
+ul.nav a, ul.nav a:visited { /* ao agrupar esses seletores, seus links mantêm a aparência de botão mesmo após terem sido visitados. */
+	/* [disabled]padding-top: 5px; */
+	padding-right: 5px;
+	padding-left: 15px;
+	/* [disabled]padding-bottom: 5px; */
+	display: block; /* isso fornece as propriedades de bloqueio de links, preenchendo todo o LI. Assim, toda a área responderá ao clique do mouse. */
+	width: 160px;  /*essa largura faz com que o botão inteiro possa ser clicado no IE6. Se não for necessário estar compatível com o IE6, ele pode ser removido. Calcule a largura apropriada subtraindo o padding neste link da largura do contêiner da barra lateral. */
+	text-decoration: none;
+	background-color: #C6D580;
+}
+ul.nav a:hover, ul.nav a:active, ul.nav a:focus { /* isso altera o fundo e a cor do texto para navegação com o mouse ou teclado. */
+	background-color: #ADB96E;
+	color: #FFF;
+	margin-top: 0px;
+}
+
+/* ~~ O rodapé ~~ */
+footer {
+	padding: 10px 0;
+	background-color: #CCC49F;
+	position: relative;/* isso possibilita que o hasLayout do IE6 faça a limpeza corretamente. */
+	clear: both; /* essa propriedade de limpeza força o contêiner a reconhecer o conteúdo das colunas e onde elas terminam. */
+}
+/* ~~ Flutuações diversas/limpeza de classes ~~ */
+.fltrt {  /* essa classe pode ser usada para flutuar um elemento à direita da página. O elemento flutuado deve preceder o elemento e ser o próximo da página. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* essa classe pode ser usada para flutuar um elemento à esquerda da página. O elemento flutuado deve preceder o elemento e ser o próximo da página. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* essa classe pode ser colocada em um <br /> ou em um elemento de bloco vazio como o elemento final que segue o último bloco flutuado (no contêiner) caso o rodapé seja removido ou retirado do contêiner. */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+
+/*Suporte HTML5 – Define novas tags do HTML5 para exibir blocos. Assim os navegadores saberão como processar as tags de forma apropriada. */
+header, section, footer, aside, article, figure {
+	display: block;
+}
+li a img {
+	margin-left: -15px;
+}
+aside h4 img {
+	margin-left: -4px;
+}
+-->
+</style><!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+</head>
+
+<body>
+
+<div class="container">
+  <header>
+    <a href="#"><img src="topo.jpg" alt="Inserir o logotipo aqui" width="960" height="90" id="Insert_logo" style="background-color: #C6D580; display:block;" /></a>
+  </header>
+  <div class="sidebar1">
+    <ul class="nav">
+        <li><a href="index.html"><img src="bt-flores1.jpg" width="180" height="90" alt=""/></a></li>
+        <li><a href="veggie.html"><img src="bt-flores2.jpg" width="180" height="90" alt=""/></a></li>
+        <li><a href="amet.html"><img src="bt-flores3.jpg" width="180" height="90" alt=""/></a></li>
+        <li><a href="ipsum.html"><img src="bt-flores4.jpg" width="180" height="90" alt=""/></a></li>
+    </ul>
+    <aside>
+      <h4>Cichorium endivia sagittaria latifolia.</h4>
+      <p> Tragopogon porrifolius bambusa vulgaris and phyllostachys edulis .</p>
+      <p>Abelmoschus esculentus bambusa vulgaris and phyllostachys edulis.</p>
+    </aside>
+  <!-- end .sidebar1 --></div>
+  <!-- InstanceBeginEditable name="Conteudo" -->
+  <article class="content">
+    <h1>Amet</h1>
+    <section>
+      <h2>Bacon ipsum dolor amet jowl short loin short ribs</h2>
+      <p><img src="flores3.jpg" width="300" height="300" alt=""/></p>
+      <p>Pig tri-tip corned beef meatloaf ball tip cupim fatback. Boudin turducken sausage jerky cupim. Shankle fatback capicola pork loin sausage cupim short ribs strip steak ham hock hamburger kielbasa porchetta beef ribs chicken. Turkey landjaeger ground round tongue, pork bacon alcatra chicken. Turkey ball tip kielbasa tenderloin short loin. Brisket prosciutto doner, pork belly swine shoulder tail.</p>
+      <h2>Rump tongue ham hock swine</h2>
+      <p>Picanha kielbasa meatloaf t-bone shank sirloin pancetta. Venison sausage shank meatloaf. Swine pastrami kevin tongue hamburger spare ribs t-bone venison bacon meatball ground round cupim jowl drumstick. Beef ribs bacon hamburger doner, picanha capicola jerky shank andouille. Shankle beef prosciutto pork tenderloin. Shoulder beef frankfurter jerky meatloaf, sirloin bacon doner tongue.</p>
+      <h2>Prosciutto swine picanha </h2>
+      <p>Corned beef, turkey sausage pork chop. Salami boudin picanha filet mignon strip steak. Filet mignon frankfurter kevin jowl short ribs, shoulder spare ribs. Kevin ground round andouille, filet mignon meatloaf bresaola turkey bacon flank ham t-bone chicken ribeye shoulder doner. Frankfurter beef ribs shankle hamburger kielbasa brisket short loin ribeye tenderloin biltong jerky short ribs tail. Bacon strip steak biltong, tongue pastrami ham hock meatball ribeye beef ribs sausage. Meatloaf shankle pork chop turkey strip steak.</p>
+      <p>Sausage picanha beef drumstick capicola cupim ball tip chuck. Pork chop frankfurter biltong ham hock turducken doner tail ball tip. Tongue leberkas fatback salami alcatra t-bone. Porchetta biltong sausage, tongue shoulder boudin fatback meatball corned beef. T-bone ham hock turkey pork leberkas drumstick chuck tail salami tri-tip tongue pork loin doner beef ribs frankfurter.    </p>
+    </section>
+    <!-- end .content -->
+  </article>
+  <!-- InstanceEndEditable -->
+  <aside>
+    <h4><img src="anuncio.jpg" width="160" height="160" alt="anúncio"/></h4>
+    <h4>Gumbo beet</h4>
+    <p>Greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. </p>
+    <h4>Dandelion cucumber</h4>
+    <p> Earthnut pea peanut soko zucchini. Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard.</p>
+  </aside>
+  <footer>
+    <p><strong>Cyperus esculentus, 123 - malva verticillata / corchorus olitorius</strong></p>
+  </footer>
+  <!-- end .container --></div>
+</body>
+<!-- InstanceEnd --></html>

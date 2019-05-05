@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Busca Achei</title>
+
+<script type="text/javascript">
+<!--
+
+function find() {
+   var paises = "";
+   if ( document.busca.opcao[0].checked ) { paises = "BR" };
+   if ( document.busca.opcao[1].checked ) { paises = "BRARELPYPECLCOMXVE" };
+   document.busca.countries.value = paises;
+}
+
+-->
+</script>
+</head>
+
+<body>
+
+<form action="http://www.achei.com.br/cgi-ps/ps_query1.cgi" method="get" id="busca" onSubmit="find()">
+
+  <input type="hidden" name="franq" value="028">
+  <input type="hidden" name="country" value="BR">
+  <input type="hidden" name="countries" value="BR">
+  <input type="hidden" name="tipo" value="e">
+  
+<p>
+<input name="opcao" value="br" checked="checked" type="radio">Brasil 
+<input name="opcao" value="al" type="radio">
+Am&eacute;rica Latina
+</p>
+
+<p>
+<input name="query" size="25" type="text">
+</p>
+
+<p>
+<input onClick="find()" alt="Achar" src="achar.jpg" border="0" height="40" type="image" width="38">
+</p>
+</form>
+</body>
+</html>

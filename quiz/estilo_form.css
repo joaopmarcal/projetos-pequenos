@@ -1,0 +1,53 @@
+@charset "utf-8";
+/* CSS Document */
+
+form {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	color: #395D81;
+	font-weight: bolder;
+	margin-left: 70px;
+}
+fieldset {
+	border: 1px solid #395D81;
+	padding: 7px;
+	width: 650px;
+	clear: left;
+	float: left;
+	margin-bottom: 30px;
+}
+legend {
+	color: #FFFFFF;
+	padding: 5px;
+	background: #9EB6E2;
+}
+form p {
+	line-height: 35px;
+	margin: 0px;
+	padding: 1px;
+}
+label [for=nome], label [for=email], label [for=celular] {
+	width: 50px;
+	display: block;
+	float: left;
+}
+.linha {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #395D81;
+	width: 85%;
+	float: right;
+	border-top-style: none;
+	border-right-style: none;
+	border-left-style: none;
+	margin-top: 10px;
+}
+br {
+	clear: right;
+}
+
+.botao {
+	clear: both;
+	display: block;
+	margin-left: 470px;
+}

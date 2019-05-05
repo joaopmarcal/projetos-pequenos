@@ -1,0 +1,14 @@
+﻿Dados Pessoais:
+Nome:
+Email:
+Celular:
+Pessoa Física ou Pessoa Jurídica
+
+Opt-in:
+Desejo receber informações por email 
+Desejo receber informações por celular 
+
+Sugestões de interesse:
+Interesses: tecnologia, educação, política
+Sugestões:
+

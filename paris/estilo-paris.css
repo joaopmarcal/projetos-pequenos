@@ -1,0 +1,140 @@
+body,td,th {
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	color: #000000;
+}
+body {
+	background-color: #FFFFFF;
+	background-image: url(imagens/back-paris.jpg);
+	background-repeat: repeat-x;
+	margin-top: 0px;
+	width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+}
+a {
+	font-weight: bold;
+	color: #14316B;
+}
+a:link {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #14316B;
+}
+a:hover {
+	text-decoration: underline;
+	color: #990000;
+}
+a:active {
+	text-decoration: none;
+}
+h1 {
+	font-size: 50px;
+	color: #14316B;
+	font-weight: normal;
+	margin-bottom: 0px;
+}
+h2 {
+	font-size: 20px;
+	color: #fff;
+	background-color: #9eb6e2;
+	margin-top: 0px;
+	padding: 5px;
+}
+h3 {
+	font-size: 20px;
+	color: #14316B;
+	font-weight: normal;
+	border-bottom-style: solid;
+	border-bottom-width: 2px;
+}
+main {
+	text-align: justify;
+	padding-right: 15px;
+	margin-left: 240px;
+}
+nav {
+	background-image: url(imagens/logotipo.png);
+	background-repeat: no-repeat;
+	text-align: right;
+	padding-top: 90px;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+nav a {
+	text-decoration: none;
+	color: #71000D;
+	font-weight: normal;
+	padding-top: 3px;
+	padding-left: 25px;
+	padding-right: 25px;
+	margin-left: 10px;
+	border-top: 2px solid #14316B;
+	font-size: 20px;
+}
+nav a:hover {
+	background-color: #D8E1F3;
+	text-decoration: none;
+}
+header {
+	padding-right: 15px;
+	margin-left: 15px;
+}
+main p img {
+	padding: 10px;
+	margin-right: 7px;
+	margin-bottom: 14px;
+	border: 1px solid #990000;
+}
+.contato-destaque {
+	padding-bottom: 7px;
+	border-bottom: 1px solid #900;
+}
+table   {
+	width: 600px;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+caption {
+	padding: 7px;
+	color: #fff;
+	font-weight: bolder;
+	background-color: #14316B;
+}
+th {
+	padding: 5px;
+	color: #FFF;
+	text-align: left;
+	background-color: #990000;
+}
+td {
+	padding: 5px;
+	border-bottom: 1px solid #990000;
+	background-color: #9EB6E2;
+}
+#box {
+	width: 480px;
+	padding: 30px 60px;
+	color: #14316b;
+	font-weight: bolder;
+	font-size: 16px;
+	line-height: 25px;
+	border: thin dashed #14316b;
+	background-color: #9eb6e2;
+	background-image: url(imagens/back-box.gif);
+}
+.valor-destaque {
+	padding: 3px;
+	color: #990000;
+	font-size: 14px;
+	background-color: #fff;
+}
+main ul li {
+	list-style: url(imagens/lista-losango.gif);
+	padding-bottom: 10px;
+}
+main ul {
+	padding-left: 25px;
+}
