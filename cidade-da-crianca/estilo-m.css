@@ -1,0 +1,51 @@
+@charset "utf-8";
+body {
+	font-family: Verdana, Geneva, sans-serif;
+	width: 80%;
+	margin-right: auto;
+	margin-left: auto;
+}
+.someTexto{
+	display: none;
+}
+h1 {
+	background: url(logo-g.jpg) no-repeat center center;
+	height: 103px;
+	margin-bottom: 30px;
+}
+h2 {
+	margin-top: 60px;
+	background: #FAD3A9;
+	padding: 10px;
+	border: 4px solid #F90;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	-ms-border-radius: 20px;
+	-o-border-radius: 20px;
+	border-radius: 20px;
+	clear: left;
+}
+ul {
+	margin: 0;
+	padding: 0;	
+}
+.imagens {
+	background: no-repeat center center;
+	height: 141px;
+	width: 250px;
+	list-style: none;
+	margin: 20px;
+	float: left;
+}
+#brinq1 {
+	background-image: url(p/brinquedo1.jpg);
+}
+#brinq2 {
+	background-image: url(p/brinquedo2.jpg);
+}
+#brinq3 {
+	background-image: url(p/brinquedo3.jpg);
+}
+#brinq4 {
+	background-image: url(p/brinquedo4.jpg);
+}
